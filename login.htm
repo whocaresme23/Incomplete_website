@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN DETAILS</title>
+	<link rel="stylesheet" type="text/css" href="proj.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<h1>LOGIN</h1>
+	<form > 
+			<i class="fa fa-user" aria-hidden="true" ></i>  USER ID:
+			<input type="text" name="user_id" id="" id="user_id" /> <br> 
+			<i class="fa fa-lock" aria-hidden="true" ></i>  PASSWORD:
+			<input type="password" name="password" id="password" />
+			<input type="checkbox" onclick="myFunction()">Show Password
+	</form> 
+	<script>
+	function myFunction() {
+  	var x = document.getElementById("password");
+  	if (x.type === "password") {
+    	x.type = "text";
+  	}
+  	else {
+    	x.type = "password";
+  		}
+	}
+</script>
+	<div class="button">
+			<a href="intro.htm" class="btn" target="_parent">BACK</a>
+			<a href="intro.htm" class="btn" target="_parent">SIGN IN</a>
+	</div>
+	<div class="sub">
+			<a href="forgot.htm" class="forgot_btn" target="_parent">FORGOT PASSWORD</a>
+	</div>
+	
+</body>
+</html>

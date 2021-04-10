@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORGOT</title>
+	<link rel="stylesheet" type="text/css" href="proj.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<h1>FORGOT PASSWORD</h1>
+	<form > 
+			<i class="fa fa-envelope-o" aria-hidden="true" ></i>  EMAIL ID:
+			<input type="email" name="name" id="email_id" placeholder="example@gmail.com" />
+			<br> 
+	</form>
+	<div class="button">
+			<a href="reset.htm" class="btn" onclick="sendMail() " target="_parent">SUBMIT</a>
+	</div>
+	<script> 
+		function sendMail() { 
+			var digits = '0123456789'; 
+			let OTP = ''; 
+			for (let i = 0; i < 6; i++ ) { 
+				OTP += digits[Math.floor(Math.random() * 10)]; 
+			} 
+			return OTP; 
+			var link = 'mailto:hello@domain.com?subject=Message from '
+             +document.getElementById('email_id').value
+             +'&body='+document.getElementById('email_id').value;
+            window.location.href = link;
+		} 
+		document.write("OTP of 6 digits: ");
+	    document.write( sendOtp() ); 
+	</script>					 
+</body>
+</html>

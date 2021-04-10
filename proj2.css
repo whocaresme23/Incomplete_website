@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 2;
+	font-family: Comic Sans MS
+}
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(logo.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+h1{
+	position: absolute;
+	top: 4%;
+	left: 75%;
+	transform: translate(-50%,-50%);
+	color: #66CDAA;
+	padding: 20px;
+}
+.button{
+	position: absolute;
+	top: 58%;
+	left: 75%;
+	transform: translate(-50%,-50%);
+}
+.button1{
+	position: absolute;
+	top: 58%;
+	left: 75%;
+	transform: translate(-40%,-50%); 
+}
+.btn{
+	text-decoration: none;
+	color: red;
+	padding: 7px 25px;
+	border: 1px solid #fff;
+	transition: 0.6s ease;
+	background-color: #fff;
+	border-radius: 20px ;
+}
+.forgot_btn{
+	text-decoration: none;
+	color: blue
+	padding: 20px 30px;
+	border: 1px solid #fff;
+	transition: 0.6s ease;
+	background-color: #fff;
+	border-radius: 30px ;
+
+}
+.btn:hover{
+	background-color: black;
+	color: red;	
+	box-shadow: 0 0 15px red;
+}
+.forgot_btn:hover{
+	background-color: black;
+	color: red;	
+	box-shadow: 0 0 15px red;
+}
+form{
+	position: absolute;
+	top: 30%;
+	left: 80%;
+	transform: translate(-50%,-50%);
+	color: red;
+	font-size: 25px;	
+}
+form i{
+	opacity: 50%;
+}
+form input{
+	color: red;
+	background-color:black;
+	font-size: 25px;
+}
+footer{
+	color: red;
+	position: absolute;
+	top: 70%;
+	left: 70%;
+}

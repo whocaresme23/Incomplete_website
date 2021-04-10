@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORGOT</title>
+	<link rel="stylesheet" type="text/css" href="proj2.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<h1>RESET PASSWORD</h1>
+	<form > 
+			<i class="fa fa-key" aria-hidden="true" ></i>  VERIFICATION CODE
+			<input type="email" name="email_id" id="otp" /> <br> 
+			<i class="fa fa-unlock" aria-hidden="true" ></i>  NEW PASSWORD
+			<input type="password" name="password1" id="password1" /> <br> 
+			<input type="checkbox" onclick="myFunction1()">Show Password<br>
+			<i class="fa fa-unlock" aria-hidden="true" ></i>  CONFIRM PASSWORD
+			<input type="password" name="password2" id="password2" /> <br> 
+			<input type="checkbox" onclick="myFunction2()">Show Password
+	</form>
+	<div class="button">
+			<a href="#" class="btn" onclick="Validate()">SUBMIT</a>
+	</div>
+	<script type="text/javascript">
+    function Validate() {
+        var newPassword = document.getElementById("password1").value;
+        var confirmPassword = document.getElementById("password2").value;
+        if (newPassword != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+    function myFunction1() {
+  	var x = document.getElementById("password1");
+  	if (x.type === "password") {
+    	x.type = "text";
+  	}
+  	else {
+    	x.type = "password";
+  		}
+	}
+	function myFunction2() {
+  	var x = document.getElementById("password2");
+  	if (x.type === "password") {
+    	x.type = "text";
+  	}
+  	else {
+    	x.type = "password";
+  		}
+	}
+</script>
+</body>
+</html>

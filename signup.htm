@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN DETAILS</title>
+	<link rel="stylesheet" type="text/css" href="proj2.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<h1>SIGNUP</h1>
+	<form > 
+		 	 FIRST NAME:
+			<input type="text" name="first_name" id="f_name" /> <br> 
+			 LAST NAME:
+			<input type="text" name="last_name" id="l_name" />
+			<i class="fa fa-user-circle-o" aria-hidden="true" ></i>  USER ID:
+			<input type="text" name="user_id" id="user_id"/> <br> 
+			<i class="fa fa-lock" aria-hidden="true"></i>  PASSWORD:
+			<input type="password" name="password"  id="password"/>
+			<input type="checkbox" onclick="myFunction()">Show Password
+	</form> 
+	<script>
+	function myFunction() {
+  	var x = document.getElementById("password");
+  	if (x.type === "password") {
+    	x.type = "text";
+  	}
+  	else {
+    	x.type = "password";
+  		}
+	}
+</script>
+	<div class="button">
+			<a href="#" class="btn" onclick="window.location.href='intro.htm';" target="_parent">BACK</a>
+			<a href="#" class="btn" onclick="window.location.href='intro.htm';" target="_parent">SIGN IN</a>
+	</div>
+	<div>
+		<footer>
+			<input type="checkbox" name="agree">	I Agree to the  <a href="#" onclick="window.location.href='tc.htm';" target="_parent">  Terms and Conditions</a> 
+			
+		</footer>
+	</div>
+</body>
+</html>

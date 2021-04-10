@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 2;
+	font-family: Comic Sans MS
+}
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(logo.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+p{
+	position: absolute;
+	top:10%;
+	left: 5%;
+	color: green;
+	font-size: 80px;
+	border:3px solid red;
+	box-shadow: 0 0 30px green;
+	opacity: 60%;
+	border-radius: 30px;
+}
+p i{
+	font-size: 40px;
+}
+.main img{
+	position: absolute;
+	top:10%;
+	left: 70%;
+	height: 400px;
+	width: 400px;
+}
+.body{
+	position: absolute;
+	top:45%;
+	left: 8%;
+}
+.body img{
+	height: 200px;
+	width: 200px;
+	border:none;
+	border-radius: 75px;
+	padding: 30px;
+}
+.body h3{
+	position: absolute;
+	top:-10%;
+	left: 20%;
+	font-size: 20px;
+	color:white;
+}
+.body ul li{
+	display: inline-block;
+}
+.body ul li a{
+	padding: 10px;
+	border-top: 40px none;
+  	font-size: 30px;
+  	width: 50px;
+    text-decoration: none;
+    margin: 5px 5px;
+    color:red;
+    opacity:60%;
+}
+.body ul li a:hover{
+	background-color: white;
+	color: black;
+}
+.sub ul{
+	position: absolute;
+	top:3%;
+	left: 50%;
+	list-style: inline-flex;
+	margin-top: 10px;
+}
+.sub ul li{
+	display: inline-block;
+}
+.sub ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+.sub ul li a:hover{
+	background-color: black;
+	color: red;	
+	box-shadow: 0 0 15px #339933;
+}
+.sub ul li.active a{
+	background-color: black;
+	color: red;	
+}

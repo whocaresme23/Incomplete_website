@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BOOKING TICKET</title>
+	<link rel="stylesheet" type="text/css" href="proj4.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="header">
+		<p>Find the <b><strong><b> cheapest </b></strong></b><br>
+and <b><strong><b> best flight<i class="fa fa-plane" aria-hidden="true"></i> </b></strong></b> for you</p>
+	</div>
+	<div class="main">
+		<ul>
+			<li class="active"><a href="#" target="_parent">SINGLE TRIP</a></li>
+				<li><a href="#" target="_parent">ROUND TRIP</a></li>
+		</ul>
+	</div>
+	<div class="sub">
+			<input type="text" name="arrival" id="arr" placeholder="Starting City" class="control-label" /> 
+			<a href="#" onclick="swapValues()"><i  class="fa fa-exchange" aria-hidden="true"></i></a>
+			<input type="text" name="departure" id="dep" placeholder="Destination City"  class="control-label"/>
+	</div>
+	<div class="button">
+			<a href="#" class="btn" target="_parent">SEARCH</a>
+			<a href="#" class="btn" target="_parent">BACK</a>
+			<a href="#" class="btn" target="_parent" onclick="clearValues()">CLEAR</a>
+	</div>
+	<script type="text/javascript">
+		function swapValues(){
+			var tmp = document.getElementById("arr").value;
+			document.getElementById("arr").value = document.getElementById("dep").value;
+			document.getElementById("dep").value = tmp;
+		}
+		function clearValues() {
+			document.getElementById('arr').value = "";
+			document.getElementById('dep').value = "";
+		} 
+	</script>
+</body>
+</html>
